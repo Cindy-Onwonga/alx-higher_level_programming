@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys
     from calculator_1 import add, sub, mul, div
+    import sys
     arg = sys.argv[1:]
     count = len(arg)
     if count != 3:
@@ -14,10 +14,10 @@ if __name__ == "__main__":
         a = arg[0]
         b = arg[2]
         if arg[1] == '+':
-            print("{} + {} = {}".format(a, b, add(a, b)))
+            print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
         elif arg[1] == '-':
-            print("{} - {} = {}".format(a, b, sub(a, b)))
+            print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
         elif arg[1] == '*':
-            print("{} * {} = {}".format(a, b, mul(a, b)))
+            print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
         elif arg[1] == '/':
-            print("{} / {} = {}".format(a, b, div(a, b)))
+            print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
